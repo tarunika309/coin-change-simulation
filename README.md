@@ -1,73 +1,53 @@
-Coin Change Simulation using Greedy Algorithm
-Overview
-The Coin Change Simulation demonstrates how the Greedy Algorithm efficiently selects the minimum number of coins to make a given amount. This approach works optimally for certain denominations but may fail for others, highlighting the limitations of the greedy method.
+💰 Coin Change Simulator using Greedy Algorithm
+🚀 A fast and efficient coin change simulation that uses the Greedy Algorithm to minimize the number of coins required for a given amount.
 
-Features
-✔ Fast & Efficient: Uses a greedy approach to minimize the number of coins.
-✔ Interactive Simulation: Allows users to input an amount and receive the optimal coin combination.
-✔ Customizable Denominations: Supports different currency systems for testing.
-✔ Performance Metrics: Displays the time complexity and efficiency of the algorithm.
+📌 Features
+✅ Fast & Lightweight – Uses a Greedy approach for quick calculations.
+✅ Real-Time Simulation – Enter an amount and get an optimal solution instantly.
+✅ Custom Denominations – Works with various currency systems.
+✅ Extensible & Modular – Easily integrates with other applications.
 
-How It Works
-Sort the coins in descending order.
-Pick the largest coin that fits into the remaining amount.
-Subtract its value from the remaining amount.
-Repeat until the amount becomes zero.
-Example:
-Given coins {1, 5, 10, 25} and an amount of 30, the greedy algorithm selects:
+⚡ How It Works
+1️⃣ Sort coins in descending order.
+2️⃣ Pick the largest coin that fits into the remaining amount.
+3️⃣ Subtract its value from the remaining amount.
+4️⃣ Repeat until the amount becomes zero.
 
+🔹 Example:
+For coins {1, 5, 10, 25} and amount 30, the algorithm selects:
 25 (remaining: 5)
 5 (remaining: 0)
-Total coins used: 2
-Time Complexity
-Unsorted Coins: 
-𝑂
-(
-𝑁
-log
-⁡
-𝑁
-)
+📌 Total coins used: 2
+
+📈 Time Complexity
+🔹 Unsorted Coins:
 O(NlogN) (due to sorting)
-Pre-sorted Coins: 
-𝑂
-(
-𝑁
-)
+🔹 Pre-sorted Coins: 
 O(N) (single pass selection)
-Space Complexity: 
-𝑂
-(
-1
-)
+🔹 Space Complexity: 
 O(1) (constant space usage)
-Advantages of the Greedy Approach
-✅ Fast Execution: Runs in linear or near-linear time.
-✅ Easy to Implement: Requires only basic sorting and iteration.
-✅ Optimized for Certain Cases: Works perfectly when the coin denominations follow a canonical system (e.g., U.S. currency).
 
-Uniqueness of This Simulation
-🔹 Real-Time Calculation – Allows users to test different amounts dynamically.
-🔹 Visual Representation – (Optional: If a GUI is implemented, displays results graphically).
-🔹 Comparative Analysis – (Optional: Can compare Greedy with Dynamic Programming for edge cases).
+💡 Advantages
+✅ Fast Execution: Runs in near-linear time.
+✅ Simple Implementation: Requires only basic sorting and iteration.
+✅ Optimized for Certain Cases: Works perfectly when denominations follow a canonical system (e.g., U.S. currency).
 
-Use Cases
-🟢 Banking & ATMs: Optimizing cash dispensing systems.
-🟢 Vending Machines: Ensuring minimal coin usage.
-🟢 Gaming & Virtual Currencies: In-game currency exchange simulations.
-🟢 E-commerce & Cash Transactions: Faster change return calculations.
+🎯 Use Cases
+💰 Banking & ATMs – Optimizing cash dispensing systems.
+🎮 Gaming & Virtual Currencies – In-game currency exchange simulations.
+🛒 E-commerce & Transactions – Faster change return calculations.
+🤖 Vending Machines – Ensuring minimal coin usage.
 
-Scope for Advancement
-🚀 Handling Non-Greedy Friendly Cases:
+🌟 Uniqueness
+🔹 Real-Time Coin Calculation – Dynamically calculates the best coin combination.
+🔹 Custom Denominations – Adaptable to different currency systems.
+🔹 Extensible for Other Approaches – Can be compared with Dynamic Programming.
 
-Implement Dynamic Programming (DP) for cases where the greedy approach fails.
+🔮 Scope for Advancement
+🚀 Handling Non-Greedy Cases:
+Implement Dynamic Programming (DP) for cases where Greedy fails.
 Example: Coins {1, 3, 4} for amount 6 (Greedy picks 4+1+1, but the optimal is 3+3).
 🚀 Multi-Currency Support:
-
-Expand the simulation to work with different currency systems.
-🚀 Optimized Greedy Variations:
-
-Use Machine Learning to predict when Greedy fails and switch to an alternative method.
+Expand to support various international currencies.
 🚀 Graphical User Interface (GUI):
-
-Create an interactive web-based or app-based tool for users.
+Develop a React/Next.js frontend for a web-based interactive tool.
